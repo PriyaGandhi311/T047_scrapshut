@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Share Joy</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<style>
+  *{
+background-color: #E5E7E9
+
+}
+body{
+
+
+font-family: Century Gothic;
+}
+
+
+
+ul li{height: 40px;
+float: left;
+width: 150px;
+line-height: 40px;
+text-align: center;
+font-size: 20px;
+display: inline-block;
+
+}
+.open-button,ul li a {text-decoration: none;
+color:#000000;
+padding: 5px 20px;
+border: 1px solid #000000;
+transition: 0.6s ease;
+}
+.open-button,ul li a:hover{
+color:#000000;
+color:#95A5A6;
+}
+
+header{
+
+box-sizing: border box;}
+header p{
+text-align: right;
+font-family:  sans-serif;
+font-size: 30px;
+}
+
+div.gallery {
+  margin: 20px;
+  border: 5px solid #000000;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 5px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+img{
+border-radius: 7px;
+}
+h4{
+font-family: Times New Roman;
+}
+
+h2{
+text-align: center;
+}
+.main{
+background: rgb(0,100,0);
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password],.form-container input[type=text],.form-container input [type="checkbox"]  {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus ,.form-container input[type=text]:focus,.form-container input [type="checkbox"]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #2F2694;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+
+</head>
+<header>
+
+<div class="main">
+
+<ul>
+<li ><a href="#">Home</a></li>
+<li><a href="/donation">Donate</a></li>
+<li>
+  <a class="open-button" onclick="openForm()">Sign In</a>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+ 
+  <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+ </li>
+    <li><a href="/donation">Sign Up</a></li>
+
+
+   <li>
+  <a class="open-button"href="/admin" onclick="openForm()">Admin</a>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+ 
+  <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+     <label for="username"><b>User Name</b></label>
+    <input type="text" placeholder="Enter User Name" name="username" required>
+
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+ 
+   </li>
+   
+   
+</div>
+
+<img src="https://thelogocompany.net/wp-content/uploads/2016/10/share-joy.jpg" alt="logo" width="150" height="150" align="right"><span><br><br><h2>HAPPY HANDS</h2></span><div class="quote" align="left"><br><br><I><h3>"Giving is not just about helping others,Its about making a difference"</h3></I></div>
+
+</header>
+<body>
+
+
+<div class="intro">
+<h2><hr>ABOUT US<hr></h2>
+<p>Coronavirus has triggered a funding crisis for NGOs when they are needed most.</p>
+<p>The economic downturn means future aid budgets and donations are likely to decline.</p>
+<p>A liquidity fund could help NGOs cover overheads in the short term.</p>
+In these unprecedent times when COVID-19 contines to spread and to impact almost every individual and organization </br>across the world directly or indirectly ,non-profit organizations or non-government organization(NGOs) are also deeply affected now</br> and in times to come.As it is not clear what the current pandemic situation holds in future,it is important to balance the scale between panic and carelessness.
+<h3>Preparedness is the key.</h3> </div>
+
+<img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/3/27/w900X450/NGOd.jpg" alt="ngo workers" width="500" height="300">
+<img src="https://static.toiimg.com/thumb/imgsize-951751,msid-76078938,width-400,resizemode-4/76078938.jpg" alt="ngo workers" width="500" height="300">
+<div class="main">
+<h2><hr>OUR REQUIREMENTS<hr></h2>
+<p>Due to the current pandemic situation the needy people cannot acquire material for protection as well as daily need.</br>Below are the list of items we require to help the people.It would be a great help if you could donate some of these.</p>
+
+<div class="gallery">
+  <a target="_blank" href="medicine.jpg">
+    <img src="https://news.cgtn.com/news/77497a4e3545444d7a51444e7a49444f3259444f31457a6333566d54/img/a0116d5269bf43a7b24cce68c177583c/a0116d5269bf43a7b24cce68c177583c.jpg" alt="Medicine" width="400" height="400">
+  </a>
+  <div class="desc">MEDICINE</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="gloves.jpg">
+    <img src="https://images.homedepot-static.com/productImages/f665086b-77bd-4d77-b6b9-4a4c4a8e9412/svn/hdx-disposable-gloves-hdx00290-10-64_1000.jpg" alt="Gloves" width="400" height="400">
+  </a>
+  <div class="desc">GLOVES </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="ppe kit.jpg">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51HdZRPwVhL._SX342_.jpg" alt="Ppe Kits" width="400" height="400">
+  </a>
+  <div class="desc">PPE KITS</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="food1.jpg">
+    <img src="https://www.kickassfacts.com/wp-content/uploads/2016/03/Food-Grains.jpg" alt="FOOD" width="400" height="400">
+  </a>
+  <div class="desc">FOOD PACKETS</div>
+</div>
+
+  <div class="gallery">
+  <a target="_blank" href="masks.jpg">
+    <img src="https://news.llu.edu/sites/news.llu.edu/files/styles/featured_image_755x425/public/screen_shot_2020-08-11_at_9.15.07_am.png?itok=4wgL0Fl1&c=d840cfde9df530f5582918792e0040a0" alt="MASKS" width="400" height="400">
+</a>
+      <div class="desc">MASKS</div>
+ 
+</div>
+<div class="gallery">
+  <a target="_blank" href="sanitizer.jpg">
+    <img src="https://cdn.aarp.net/content/dam/aarp/health/conditions_treatments/2020/07/1140-hand-sanitizer-recall-methanol.jpg" alt="SANITIZER" width="400" height="400">
+  </a>
+  <div class="desc">SANITIZER</div>
+</div>
+
+</body>
+</html>
